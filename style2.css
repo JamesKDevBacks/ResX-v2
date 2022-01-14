@@ -1,0 +1,88 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "times new roman";
+  background: url(resx3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  padding-top: 6%;
+}
+
+.name {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  text-shadow: 10px 10px 10px grey;
+
+}
+
+.co-name {
+  font-family: permanent marker;
+  color: #04aa6d;
+  animation: fadeIn;
+  animation-duration: 5s;
+}
+
+h2 {
+  font-family: "times new roman";
+  font-weight: 1000;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 10px 10px 10px grey;
+  animation: fadeIn;
+  animation-duration: 5s;
+}
+
+.buffer {
+  height: 10rem;
+}
+
+.btn {
+  font-weight: bold;
+  border-radius: 300px;
+  text-transform: uppercase;
+  animation: fadeIn;
+  animation-duration: 5s;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+
+}
+
+.btn-primary {
+  color: white;
+  border-color: white;
+  background-color: #04aa6d;
+  margin-bottom: 50px;
+
+}
+
+.btn-primary:link {
+  color: #04aa6d;
+  background-color: #04aa6d;
+  border-color: #f05f44;
+  border-width: 4px;
+}
+
+
+hr {
+  margin: 70px auto;
+  color: #04aa6d;
+  border: 2px solid #04aa6d;
+  border-radius: 10px;
+  max-width: 505px;
+  opacity: .3;
+  }
