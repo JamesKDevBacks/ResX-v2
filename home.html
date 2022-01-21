@@ -24,23 +24,85 @@
   <div class="container">
     <div>
       <img class="globe" src="./img/hand.png">
-    </div>
-    <div class="centered">
-      <img class="logo"src="./img/logo1.png">
-      <p id="message"></p>
+      <div class="container1">
+        <img class="logo"src="./img/logo1.png">
+        <p id="message"></p>
+      </div>
     </div>
   </div>
-  <div class="zone blue grid-wrapper">
-    <div class="box zone"><img src="./img/files_2.png"></div>
-    <div class="box zone"><img src="./img/server_2_2.png"></div>
-    <div class="box zone"><img src="./img/monitor_settings_2.png"></div>
-    <div class="box zone"><img src="./img/server_3.png"></div>
-    <div class="box zone"><img src="./img/data_storage_2_2.png"></div>
-    <div class="box zone"><img src="./img/monitor_coding_2.png"></div>
-    <div class="box zone"><img src="./img/desktop_analytics_2.png"></div>
-    <div class="box zone"><img src="./img/server_safe_2.png"></div>
+  <div class="slideshow-container">
+    <div class="mySlides fade" style="display: block;">
+      <div class="numbertext">1/3</div>
+      <img src="./img/gaming.jpg" style="width: 100%">
+      <div class="text">Are you looking for help on what to build for you personal computer or laptop? Contact us and we can help you on building or upgrading your computer to your needs!</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2/3</div>
+      <img src="./img/cloud.jpg" style="width: 100%;">
+      <div class="text">Have any questions with Cloud Technologies? You can always ask us! We can let you know how the Cloud can improve your personal or business needs!</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3/3</div>
+      <img src="./img/biz.jpg" style="width: 100%;">
+      <div class="text">We can help with all of your Small Business digital needs! At ResX, we keep everything SIMPLE and help you with installation, maintainance or upgrading your business to the ever-changing digital world! Contact us now for so we can get your business on track!</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+  <br>
+  <div style="text-align:center">
+    <div class="dot active" onclick="currentSlide(1)"></div>
+    <div class="dot" onclick="currentSlide(2)"></div>
+    <div class="dot" onclick="currentSlide(3)"></div>
+  </div>
+  <div class="grid-wrapper">
+    <div class="box"><img src="./img/banner2.jpg">
+      <p class="coding"><strong>Coding</strong> is Fun!<br>Join our Community! We are all about Open-Source and our goal is to spread the knowledge to everyone! We can talk about Web Development, front end, back end coding and even going in to the world of DeFi and Dapps!! Let us bring our resources together and build a strong digital world! <a class="signup"href="#">Click here</a> to Sign Up for an account!</p>
+    </div>
+    <div class="box"><img src="./img/open.jpg">
+      <p class="store">Check out our <strong>ResX Store</strong>! We have all different items for your Technology needs! From computer parts to "build your own" PC! Do you also need literature? We got that too! Let's start saying "Hello World" to the Digital Side! <a class="signup"href="#">Click here</a> to go to our ResX Store!!</p>
+    </div>
+    <div class="box"><img src="./img/work.jpg">
+      <p class="work">Here at ResX, we take pride in everything that we do. From changing out motherboards, to installing a full Cloud system for your Small Businesses! We take pictures of our work, and document everything so it feels like you are there with us! <a class="signup"href="#">Click here</a> to create an account with us and you will get all of the perks of being part of the ResX Family!</p>
+    </div>
+  <section>
+  <div class="container2">
+    <script type="text/javascript">
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          document.querySelectorAll(".animated")[0].classList.add("fadeInLeft");
+          document.querySelectorAll(".animated")[1].classList.add("fadeInRight");
+        }
+      })
+    })
+
+    observer.observe(document.querySelector(".container2"));
+    </script>
+    <section class="inline">
+    <div class="animated">
+    <p class="box passion"><img class="passion1"src="./img/passion.jpg">
+    It's all about PASSION! Anyone can learn anything in this "complicated" Digital World! We are here to do it together! We can all end up being experts in any part of Technology. If it is Coding, building hardware, to working on Virtual Machines! We can help on many different Operating Systems! Let's get started today!<br>
+    <br>
+        <br>
+            <br>
+    -ResX Team</p>
+    </div>
+    <div class="animated">
+      <p class="box passion2"><img class="group"src="./img/group.jpg">Here in ResX, we are here for you. Our Community is to bring us all together and expand our knowledge! No one is #1 in their field because there is alway room for improvement. It is in the beginning phases now, but our vision is to become a "Social Media" platform for all people who wants to teach, learn, and network!<br>
+      <br>
+      <br>
+      <br>
+      -ResX Team</p>
+    </div>
+    </section>
+  </div>
+  </section>
+
+  </div>
+
   <footer class="zone">ResX - Technology Solutions : Over Simplified</footer>
+
 </div>
 </body>
 </html>
